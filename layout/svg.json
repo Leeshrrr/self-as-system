@@ -1,0 +1,7 @@
+[
+    { "src": "images/receipt01.png", "height": 975, "width": 437, "type": "image" },
+    { "src": "images/receipt02.png", "height": 1200, "width": 437, "type": "table2" },
+    { "src": "images/receipt03.png", "height": 1288, "width": 437, "type": "image" },
+    { "src": "images/receipt04.png", "height": 1359, "width": 437, "type": "table2" },
+    { "src": "images/receipt05.png", "height": 1091, "width": 437, "type": "image" }
+]
