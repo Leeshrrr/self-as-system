@@ -1,5 +1,5 @@
  var d = $.ajax({
-     url: "../items.json", //json文件位置，文件名
+     url: "../JSON-file/items.json", //json文件位置，文件名
      type: "GET", //请求方式为get
      dataType: "json", //返回数据格式为json
      async: false,

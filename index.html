@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="enable-scroll">
 
 <head>
     <meta charset="UTF-8">
@@ -14,28 +14,20 @@
 
 
 <body>
-    <!-- <div class="img-box">
-        <script src="../scripts/getData.js"></script>
-
-        <div class=container>
-            <div id="main" style="width: 400px;height:800px;"></div>
-
-        </div>
-
-    </div> -->
 
 
-    <div id="app"></div>
+    <div id="app"> </div>
 
 
-    <script src="masonry.js"></script>
+
+    <script src="scripts/masonry.js"></script>
 
     <script>
         const $container = document.querySelector('#app')
         const masonry = new Masonry($container)
         masonry.init()
     </script>
-    <script src="../01-chart/main.js"></script>
+
 
 
 </body>

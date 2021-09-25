@@ -91,6 +91,16 @@ class Masonry {
 
         const fragment = document.createDocumentFragment()
         const cells = []
+        const cell0 = document.createElement('div')
+        cell0.classList.add('cell')
+
+        cell0.innerHTML = `
+            <div class="img-box">
+             <iframe src="../text-01/index.html" width="400" height="400" ></iframe>
+            </div>
+          `
+        cells.push(cell0)
+        fragment.appendChild(cell0)
 
         dataFinal.forEach(item => {
             const cell = document.createElement('div')
@@ -165,6 +175,6 @@ class Masonry {
     }
 
     fetchData() {
-        return fetch('svg.json').then(res => res.json())
+        return fetch('../JSON-file/source.json').then(res => res.json())
     }
 }

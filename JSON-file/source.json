@@ -20,6 +20,16 @@
     { "src": "../code-images/index.html", "height": 850, "width": 400, "type": "text" },
     { "src": "../code-images/index2.html", "height": 800, "width": 400, "type": "text" },
 
+    { "src": "../text-01/index.html", "height": 400, "width": 400, "type": "text" },
+    { "src": "../chart-01/index.html", "height": 800, "width": 400, "type": "table" },
+    { "src": "../chart-02/index.html", "height": 500, "width": 400, "type": "table" },
+    { "src": "../chart-03/index.html", "height": 700, "width": 400, "type": "table" },
+    { "src": "../chart-04/index.html", "height": 750, "width": 400, "type": "table" },
+    { "src": "../chart-05/index.html", "height": 550, "width": 400, "type": "table" },
+    { "src": "../chart-06/index.html", "height": 650, "width": 400, "type": "table" },
+    { "src": "../code-images/index.html", "height": 850, "width": 400, "type": "text" },
+    { "src": "../code-images/index2.html", "height": 800, "width": 400, "type": "text" },
+
     { "src": "../receipt-images/receipt01.png", "height": 11334, "width": 4945, "type": "image" },
     { "src": "../receipt-images/receipt02.png", "height": 12633, "width": 4550, "type": "image" },
     { "src": "../receipt-images/receipt03.png", "height": 14450, "width": 2904, "type": "image" },
