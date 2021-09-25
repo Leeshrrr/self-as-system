@@ -6,9 +6,12 @@
      success: function(data) { //请求成功完成后要执行的方法 
      }
  });
- var data = d.responseJSON;
+ var data2 = d.responseJSON;
 
 
 
- console.log(data);
- console.log(data[23]);
+ //  console.log(data2);
+ //  console.log(data2[23]);
+ //  for (let i = 0; i < data2.length; i++) {
+ //      console.log(data2[i].NUMBER);
+ //  }

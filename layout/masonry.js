@@ -70,32 +70,64 @@ class Masonry {
         const data = await this.fetchData()
         console.log(data);
 
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function shuffle(arr) {
+            let _arr = arr.slice(); //slice不会影响原来的数组，但是splice就会影响原来的arr数组
+            for (let i = 0; i < _arr.length; i++) {
+                let j = getRandomInt(0, i);
+                let t = _arr[i];
+                _arr[i] = _arr[j];
+                _arr[j] = t;
+            }
+            return _arr;
+        }
+        let dataFinal = shuffle(data);
+        console.log(shuffle(data));
+
+
+
         const fragment = document.createDocumentFragment()
         const cells = []
 
-        data.forEach(item => {
+        dataFinal.forEach(item => {
             const cell = document.createElement('div')
             cell.classList.add('cell')
-            if (item.type == "table") {
+            if (item.type == "table2") {
                 cell.innerHTML = `
                 <div class="img-box">
-                <div id="main" style="width: 400px;height:400px;"></div>
-                <script src="../scripts/main.js"></script>               
+                <script src="../scripts/getData.js"></script>
+
+                <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+                <div class=container>
+                    <div id="main" style="width: 400px;height:800px;"></div>
+                    <script src="main.js"></script>
+                </div>             
                 </div>
               `
                 console.log("table")
-            } else if (item.type == "table2") {
+            } else if (item.type == "table") {
                 cell.innerHTML = `
                 <div class="img-box">
-                 <iframe src="../index.html" width="${this.COLUMN_WIDTH}" height="${item.height * this.COLUMN_WIDTH / item.width}" scrollbar="none"></iframe>
+                 <iframe src="${item.src}" width="${this.COLUMN_WIDTH}" height="${item.height * this.COLUMN_WIDTH / item.width}" scrollbar="none"></iframe>
+                </div>
+              `
+
+            } else if (item.type == "text") {
+                cell.innerHTML = `
+                <div class="img-box">
+                 <iframe src="${item.src}" width="${this.COLUMN_WIDTH}" height="${item.height * this.COLUMN_WIDTH / item.width}" scrollbar="none"></iframe>
                 </div>
               `
 
             } else if (item.type == "image") {
                 cell.innerHTML = `
-                <div class="img-box">
-                  
-                  <img src="${item.src}" width="${this.COLUMN_WIDTH}" height="${item.height * this.COLUMN_WIDTH / item.width}" scrollbar="none"/>
+                <div class="img-box">  
+                <div class="receipts" width = "400px " height="${item.height * this.COLUMN_WIDTH / item.width+50}">  
+                  <img src="${item.src}" width="${this.COLUMN_WIDTH-100}" height="${item.height * this.COLUMN_WIDTH / item.width}" />
+                </div>
                 </div>
               `
 

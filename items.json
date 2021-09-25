@@ -30,7 +30,16 @@
             { "ID": 45497387449486, "TYPE": "DAILY", "SUBTYPE": "CONTAINER", "NAME": "SOFT POLYETHYLENE", "PRICE": 11.90, "AMOUNT": 1 }
         ]
     },
-    { "NUMBER": 3, "SUBTOTAL": 11.90, "DATE": "8/23", "TIME": "13:41", "COMPANY": "MUJI", "PAYMENT": "CASH", "BAG": 0, "THING": [{ "ID": 42563604325, "TYPE": "DAILY", "SUBTYPE": "HAND SOUP", "NAME": "FIELD DAY HAND SOUP LIQ LAVENDER", "PRICE": 5.99, "AMOUNT": 1 }] },
+    {
+        "NUMBER": 3,
+        "SUBTOTAL": 11.90,
+        "DATE": "8/23",
+        "TIME": "13:41",
+        "COMPANY": "MUJI",
+        "PAYMENT": "CASH",
+        "BAG": 0,
+        "THING": [{ "ID": 42563604325, "TYPE": "DAILY", "SUBTYPE": "HAND SOUP", "NAME": "FIELD DAY HAND SOUP LIQ LAVENDER", "PRICE": 5.99, "AMOUNT": 1 }]
+    },
     {
         "NUMBER": 4,
         "SUBTOTAL": 26.72,
