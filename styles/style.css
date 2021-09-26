@@ -6,10 +6,10 @@
 html {
     margin: 0;
     background-color: #000;
-    color: white;
     max-width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
+    color: greenyellow;
 }
 
 .enable-scroll {
@@ -35,7 +35,7 @@ body {
 .container {
     margin: 0;
     width: 400px;
-    border: 2px solid white;
+    /* border: 2px solid violet; */
     background-color: black;
 }
 
@@ -43,6 +43,7 @@ body {
     padding: 20px 0 0;
     text-align: center;
     font-size: 50px;
+    color: rgb(151, 252, 0);
 }
 
 #code-images {
@@ -51,5 +52,20 @@ body {
 }
 
 .receipts {
-    border: 2px solid white;
+    border: 2px solid greenyellow;
+}
+
+iframe {
+    border: 2px solid rgb(255, 0, 255);
+}
+
+#loading {
+    /* height: 40px; */
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: black;
+    padding: 20px;
+    border: 2px solid rgb(255, 0, 255);
+    color: greenyellow;
 }

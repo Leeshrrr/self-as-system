@@ -15,7 +15,7 @@ var option = {
         right: "center",
         top: 5,
         textStyle: {
-            color: '#fff',
+            color: "#fff",
             fontFamily: "FAKERECE"
         }
 
@@ -57,7 +57,7 @@ var option = {
         color: '#fff',
         fontFamily: "FAKERECE"
     },
-    color: "#fff"
+    color: "greenyellow"
 
 };
 

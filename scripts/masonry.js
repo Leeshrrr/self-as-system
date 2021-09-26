@@ -105,20 +105,7 @@ class Masonry {
         dataFinal.forEach(item => {
             const cell = document.createElement('div')
             cell.classList.add('cell')
-            if (item.type == "table2") {
-                cell.innerHTML = `
-                <div class="img-box">
-                <script src="../scripts/getData.js"></script>
-
-                <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
-                <div class=container>
-                    <div id="main" style="width: 400px;height:800px;"></div>
-                    <script src="main.js"></script>
-                </div>             
-                </div>
-              `
-                console.log("table")
-            } else if (item.type == "table") {
+            if (item.type == "table") {
                 cell.innerHTML = `
                 <div class="img-box">
                  <iframe src="${item.src}" width="${this.COLUMN_WIDTH}" height="${item.height * this.COLUMN_WIDTH / item.width}" scrollbar="none"></iframe>
@@ -128,8 +115,10 @@ class Masonry {
             } else if (item.type == "text") {
                 cell.innerHTML = `
                 <div class="img-box">
+                
                  <iframe src="${item.src}" width="${this.COLUMN_WIDTH}" height="${item.height * this.COLUMN_WIDTH / item.width}" scrollbar="none"></iframe>
-                </div>
+               
+                 </div>
               `
 
             } else if (item.type == "image") {

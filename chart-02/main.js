@@ -88,7 +88,7 @@ var option = {
         color: '#fff',
         fontFamily: "FAKERECE"
     },
-    color: "#fff"
+    color: "#ff1cae"
 
 };
 
