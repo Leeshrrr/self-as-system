@@ -124,10 +124,9 @@ class Masonry {
             } else if (item.type == "image") {
                 cell.innerHTML = `
                 <div class="img-box">  
-                <div class="receipts" width = "400px " height="${item.height * this.COLUMN_WIDTH / item.width+50}">  
-                  <img src="${item.src}" width="${this.COLUMN_WIDTH-100}" height="${item.height * this.COLUMN_WIDTH / item.width}" />
+                  <img class="receipts" src="${item.src}" width="${this.COLUMN_WIDTH}" height="${item.height * this.COLUMN_WIDTH / item.width}" />
                 </div>
-                </div>
+              
               `
 
             }

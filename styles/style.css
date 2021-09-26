@@ -69,3 +69,27 @@ iframe {
     border: 2px solid rgb(255, 0, 255);
     color: greenyellow;
 }
+
+.header {
+    /* height: 40px; */
+    font-size: 40px;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    background: black;
+    padding: 20px;
+    border: 2px solid rgb(255, 0, 255);
+    color: greenyellow;
+}
+
+#ab {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#ab2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
