@@ -163,6 +163,8 @@ class Masonry {
     }
 
     fetchData() {
-        return fetch('../JSON-file/source.json').then(res => res.json())
+        // return fetch('../JSON-file/source.json').then(res => res.json())
+        return fetch('https://githubbusercontent.com/Leeshrrr/self-as-system/blob/master/JSON-file/source.json').then(res => res.json())
+
     }
 }
