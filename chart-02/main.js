@@ -38,9 +38,9 @@ myChart.resize({
 // 指定图表的配置项和数据
 var option = {
 
-    backgroundColor: "#000",
+    backgroundColor: "#1F1F1F",
     title: {
-        text: "things i buy more than once",
+        text: "Things that I Buy more than Once",
         right: "center",
         top: 5,
         textStyle: {

@@ -72,11 +72,19 @@ option = {
                 color: '#fff',
                 fontFamily: "FAKERECE"
             },
+            pieces: [
+                { min: 260.1, max: 280 },
+                { min: 250, max: 260 },
+                { min: 50, max: 250 },
+                { min: 20.1, max: 50 },
+                { max: 20 },
+            ],
+
 
 
             inRange: {
                 // 选中范围中的视觉配置z
-                color: ['#ff1cae', '#fff'], // 定义了图形颜色映射的颜色列表，
+                color: ['#00fdff', "#fff", '#ff1cae'], // 定义了图形颜色映射的颜色列表，
                 // 数据最小值映射到'blue'上，
                 // 最大值映射到'red'上，
                 // 其余自动线性计算。

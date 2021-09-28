@@ -10,6 +10,8 @@
     { "src": "../code-images/index.html", "height": 850, "width": 400, "type": "text" },
     { "src": "../code-images/index2.html", "height": 800, "width": 400, "type": "text" },
 
+    { "src": "../chart-07/index.html", "height": 3000, "width": 400, "type": "table" },
+
     { "src": "../text-01/index.html", "height": 400, "width": 400, "type": "text" },
     { "src": "../chart-01/index.html", "height": 800, "width": 400, "type": "table" },
     { "src": "../chart-02/index.html", "height": 500, "width": 400, "type": "table" },

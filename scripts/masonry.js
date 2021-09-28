@@ -67,53 +67,7 @@ class Masonry {
     }
 
     async appendCells() {
-        // const data = await this.fetchData()
-        const data = [
-
-            { "src": "../text-01/index.html", "height": 400, "width": 400, "type": "text" },
-            { "src": "../chart-01/index.html", "height": 800, "width": 400, "type": "table" },
-            { "src": "../chart-02/index.html", "height": 500, "width": 400, "type": "table" },
-            { "src": "../chart-03/index.html", "height": 700, "width": 400, "type": "table" },
-            { "src": "../chart-04/index.html", "height": 750, "width": 400, "type": "table" },
-            { "src": "../chart-05/index.html", "height": 550, "width": 400, "type": "table" },
-            { "src": "../chart-06/index.html", "height": 650, "width": 400, "type": "table" },
-            { "src": "../code-images/index.html", "height": 850, "width": 400, "type": "text" },
-            { "src": "../code-images/index2.html", "height": 800, "width": 400, "type": "text" },
-
-            { "src": "../text-01/index.html", "height": 400, "width": 400, "type": "text" },
-            { "src": "../chart-01/index.html", "height": 800, "width": 400, "type": "table" },
-            { "src": "../chart-02/index.html", "height": 500, "width": 400, "type": "table" },
-            { "src": "../chart-03/index.html", "height": 700, "width": 400, "type": "table" },
-            { "src": "../chart-04/index.html", "height": 750, "width": 400, "type": "table" },
-            { "src": "../chart-05/index.html", "height": 550, "width": 400, "type": "table" },
-            { "src": "../chart-06/index.html", "height": 650, "width": 400, "type": "table" },
-            { "src": "../code-images/index.html", "height": 850, "width": 400, "type": "text" },
-            { "src": "../code-images/index2.html", "height": 800, "width": 400, "type": "text" },
-
-            { "src": "../text-01/index.html", "height": 400, "width": 400, "type": "text" },
-            { "src": "../chart-01/index.html", "height": 800, "width": 400, "type": "table" },
-            { "src": "../chart-02/index.html", "height": 500, "width": 400, "type": "table" },
-            { "src": "../chart-03/index.html", "height": 700, "width": 400, "type": "table" },
-            { "src": "../chart-04/index.html", "height": 750, "width": 400, "type": "table" },
-            { "src": "../chart-05/index.html", "height": 550, "width": 400, "type": "table" },
-            { "src": "../chart-06/index.html", "height": 650, "width": 400, "type": "table" },
-            { "src": "../code-images/index.html", "height": 850, "width": 400, "type": "text" },
-            { "src": "../code-images/index2.html", "height": 800, "width": 400, "type": "text" },
-
-            { "src": "../receipt-images/receipt01.png", "height": 11334, "width": 4945, "type": "image" },
-            { "src": "../receipt-images/receipt02.png", "height": 12633, "width": 4550, "type": "image" },
-            { "src": "../receipt-images/receipt03.png", "height": 14450, "width": 2904, "type": "image" },
-            { "src": "../receipt-images/receipt04.png", "height": 10917, "width": 4892, "type": "image" },
-            { "src": "../receipt-images/receipt05.png", "height": 9350, "width": 5121, "type": "image" },
-            { "src": "../receipt-images/receipt06.png", "height": 10495, "width": 6496, "type": "image" },
-            { "src": "../receipt-images/receipt07.png", "height": 13075, "width": 5125, "type": "image" },
-            { "src": "../receipt-images/receipt08.png", "height": 14166, "width": 5125, "type": "image" },
-            { "src": "../receipt-images/receipt09.png", "height": 12122, "width": 4933, "type": "image" },
-            { "src": "../receipt-images/receipt10.png", "height": 13833, "width": 3837, "type": "image" }
-
-
-
-        ];
+        const data = await this.fetchData()
         console.log(data);
 
         function getRandomInt(min, max) {
@@ -209,8 +163,6 @@ class Masonry {
     }
 
     fetchData() {
-        // return fetch('../JSON-file/source.json').then(res => res.json())
-        return fetch('https://githubbusercontent.com/Leeshrrr/self-as-system/blob/master/JSON-file/source.json').then(res => res.json())
-
+        return fetch('../JSON-file/source.json').then(res => res.json())
     }
 }
